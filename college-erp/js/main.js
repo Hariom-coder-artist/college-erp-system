@@ -7,8 +7,8 @@ const App = (() => {
       const raw = localStorage.getItem(STORAGE_KEY);
       return raw ? JSON.parse(raw) : {
         notices: [],
-        students: [{name:'Hariom Kumar',email:'hariom@gmail.com'}],
-        faculties: [{name:'Gini Rastogi',email:'gini@gmail.com'}],
+        students: [{name:'Hariom Kumar',email:'hariom@gmail.com'},{name:'Omkar Roshan',email:'omkar@gmail.com'}],
+        faculties: [{name:'Mahi Rastogi',email:'mahi@gmail.com'}],
         courses: [{name:'B.Tech CSE'}],
         metrics: {faculty:1,students:1,courses:1,totalFees:89000}
       };
