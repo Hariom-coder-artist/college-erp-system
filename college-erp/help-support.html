@@ -1,0 +1,71 @@
+<!-- help-support.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Help and Support</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/help-support.css">
+  <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="brand"><img src="assets/college.png" alt="logo" style="height:36px">College ERP System</div>
+      <div class="welcome">Welcome Hariom Kumar</div>
+      <ul class="nav">
+        <li><img src="assets/dashboard.png" alt="logo" style="height:36px"><a href="admin-dashboard.html">Dashboard</a></li>
+        <li><img src="assets/faculty.png" alt="logo" style="height:36px"><a href="admin-manage-faculty.html">Manage Faculties</a></li>
+        <li><img src="assets/student.png" alt="logo" style="height:36px"><a href="admin-manage-students.html">Manage Students</a></li>
+        <li><img src="assets/course.png" alt="logo" style="height:36px"><a href="admin-manage-course.html">Manage Course</a></li>
+        <li class="active"><img src="assets/help.png" alt="logo" style="height:36px"><a href="help-support.html">Help & Support</a></li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <div class="header">
+        <div>
+          <div class="h-title">Help and Support</div>
+          <div class="h-sub">How can we help you?</div>
+        </div>
+        <div><a href="index.html" class="right-muted">Logout</a></div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
+        <div class="tile"><strong>How to add a student?</strong><div class="right-muted">Go to Manage Student → Add Student → Enter email, name, password and press enter.</div></div>
+        <div class="tile"><strong>How to logout?</strong><div class="right-muted">Click on your profile and press logout.</div></div>
+        <div class="tile"><strong>How to reset password?</strong><div class="right-muted">Go to Forgot Password and follow instructions.</div></div>
+        <div class="tile"><strong>How to edit details?</strong><div class="right-muted">Use the search bar to find the user by email → Click edit.</div></div>
+      </div>
+    </main>
+
+    <aside class="quick">
+      <h4>Quick Menu</h4>
+      <a href="#" data-open-modal="noticeModal">Notice</a>
+      <a href="admin-manage-faculty.html">Add faculty</a>
+      <a href="admin-manage-students.html">Add student</a>
+      <a href="admin-manage-course.html">Add course</a>
+    </aside>
+  </div>
+
+  <div id="noticeModal" class="modal" style="display:none">
+    <div class="box">
+      <h3>Notice</h3>
+      <table class="table" id="noticeTable">
+        <thead><tr><th>Notice Description</th><th>Date</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <form id="noticeForm" style="margin-top:12px">
+        <div class="form-inline">
+          <input name="notice" class="input" placeholder="Enter notice description">
+          <button class="btn btn-primary" type="submit">Add Notice</button>
+          <button type="button" data-close-modal class="btn btn-ghost">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/help-support.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!-- admin-manage-course.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Manage Course - Admin</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/admin-manage-course.css">
+  <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="brand"><img src="assets/college.png" alt="logo" style="height:36px">College ERP System</div>
+      <div class="welcome">Welcome Hariom Kumar</div>
+      <ul class="nav">
+        <li><img src="assets/dashboard.png" alt="logo" style="height:36px"><a href="admin-dashboard.html">Dashboard</a></li>
+        <li><img src="assets/faculty.png" alt="logo" style="height:36px"><a href="admin-manage-faculty.html">Manage Faculties</a></li>
+        <li><img src="assets/student.png" alt="logo" style="height:36px"><a href="admin-manage-students.html">Manage Students</a></li>
+        <li class="active"><img src="assets/course.png" alt="logo" style="height:36px"><a href="admin-manage-course.html">Manage Course</a></li>
+        <li><img src="assets/help.png" alt="logo" style="height:36px"><a href="help-support.html">Help & Support</a></li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <div class="header">
+        <div>
+          <div class="h-title">Manage Course</div>
+          <div class="h-sub">Add or remove courses</div>
+        </div>
+        <div><a href="index.html" class="right-muted">Logout</a></div>
+      </div>
+
+      <div style="display:flex;gap:12px;margin-bottom:12px">
+        <button id="addCourseBtn" class="btn btn-primary">Add Course</button>
+        <button id="removeCourseBtn" class="btn btn-ghost">Remove Course</button>
+      </div>
+
+      <form class="search-form" style="display:flex;gap:8px;max-width:640px">
+        <input class="input" name="q" placeholder="Enter course name">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+
+      <table class="table" style="margin-top:12px" id="coursesTable">
+        <thead><tr><th>Course Name</th><th>Action</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </main>
+
+    <aside class="quick">
+      <h4>Quick Menu</h4>
+      <a href="#" data-open-modal="noticeModal">Notice</a>
+      <a href="admin-manage-faculty.html">Add faculty</a>
+      <a href="admin-manage-students.html">Add student</a>
+      <a href="admin-manage-course.html">Add course</a>
+    </aside>
+  </div>
+
+  <div id="noticeModal" class="modal" style="display:none">
+    <div class="box">
+      <h3>Notice</h3>
+      <table class="table" id="noticeTable">
+        <thead><tr><th>Notice Description</th><th>Date</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <form id="noticeForm" style="margin-top:12px">
+        <div class="form-inline">
+          <input name="notice" class="input" placeholder="Enter notice description">
+          <button class="btn btn-primary" type="submit">Add Notice</button>
+          <button type="button" data-close-modal class="btn btn-ghost">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/admin-manage-course.js"></script>
+</body>
+</html>

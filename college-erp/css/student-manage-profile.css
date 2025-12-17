@@ -1,0 +1,6 @@
+/* css/student-manage-profile.css */
+@import url('main.css');
+
+main .h-title{font-size:20px}
+form{max-width:720px}
+.form-row input.input{font-size:15px}

@@ -1,0 +1,79 @@
+<!-- student-attendance.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>View Attendance - Student</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/student-attendance.css">
+  <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="brand"><img src="assets/college.png" alt="logo" style="height:36px">College ERP System</div>
+      <div class="welcome">Welcome Hariom Kumar</div>
+      <ul class="nav">
+        <li><img src="assets/dashboard.png" alt="logo" style="height:36px"><a href="student-dashboard.html">Dashboard</a></li>
+        <li><img src="assets/profile.png" alt="logo" style="height:36px"><a href="student-manage-profile.html">Manage Profile</a></li>
+        <li class="active"><img src="assets/attendance.png" alt="logo" style="height:36px"><a href="student-attendance.html">View Attendance</a></li>
+       
+      </ul>
+    </aside>
+
+    <main class="main">
+      <div class="header">
+        <div>
+          <div class="h-title">View Attendance</div>
+          <div class="h-sub">Your attendance summary</div>
+        </div>
+        <div><a href="index.html" class="right-muted">Logout</a></div>
+      </div>
+
+      <div style="display:flex;gap:12px">
+        <div class="tile" style="flex:1">
+          <div class="num" id="attendancePercent">Attendance: 0%</div>
+          <div class="label">Overall attendance</div>
+        </div>
+        <div class="tile" style="flex:1">
+          <div class="num" id="totalLectures">Total Lectures: 0</div>
+          <div class="label">Lectures held</div>
+        </div>
+      </div>
+
+      <table class="table" style="margin-top:18px" id="attendanceTable">
+        <thead><tr><th>Course</th><th>Total Lectures Attended</th><th>Total Lectures</th></tr></thead>
+        <tbody>
+          <tr><td>B.Tech CSE</td><td id="attended">0</td><td id="total">0</td></tr>
+        </tbody>
+      </table>
+    </main>
+
+    <aside class="quick">
+      <h4>Quick Menu</h4>
+      <a href="#" data-open-modal="noticeModal">Notice</a>
+      <a href="#">Change Password</a>
+    </aside>
+  </div>
+
+  <div id="noticeModal" class="modal" style="display:none">
+    <div class="box">
+      <h3>Notice</h3>
+      <table class="table" id="noticeTable">
+        <thead><tr><th>Notice Description</th><th>Date</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <form id="noticeForm" style="margin-top:12px">
+        <div class="form-inline">
+          <input name="notice" class="input" placeholder="Enter notice description">
+          <button class="btn btn-primary" type="submit">Add Notice</button>
+          <button type="button" data-close-modal class="btn btn-ghost">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/student-attendance.js"></script>
+</body>
+</html>

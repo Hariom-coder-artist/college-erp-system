@@ -1,0 +1,5 @@
+/* css/student-attendance.css */
+@import url('main.css');
+
+.tile{min-height:100px;display:flex;flex-direction:column;justify-content:center}
+#attendancePercent{font-size:18px;font-weight:700}

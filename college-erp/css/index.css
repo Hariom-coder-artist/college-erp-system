@@ -1,0 +1,6 @@
+/* css/admin-manage-faculty.css */
+@import url('main.css');
+
+.search-form{margin-top:20px}
+.table td a{color:var(--primary)}
+

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Student Login</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/student-login.css">
+  <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+  <div class="container" style="align-items:center">
+    <div class="hero" style="min-height:520px">
+      <div class="illustration">
+        <img src="assets/student-login.jpg" alt="student illustration" style="width:90%;border-radius:12px">
+      </div>
+
+      <div class="card">
+        
+        
+        <h1>Student Login</h1>
+        <p>Enter your credentials to access the student portal</p>
+
+        <form id="loginForm" data-role="student">
+          <div class="form-row">
+            <label class="right-muted">Email address</label>
+            <input class="input" name="email" type="email" placeholder="Enter your email address" required>
+          </div>
+
+          <div class="form-row">
+            <label class="right-muted">Password</label>
+            <input class="input" name="password" type="password" placeholder="Enter password" required>
+          </div>
+
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <a href="#" id="forgotStudent" class="right-muted">Forgot password?</a>
+            <button class="btn btn-primary" type="submit">Login</button>
+          </div>
+        </form>
+
+        <p style="margin-top:20px"><a href="index.html">Back to home</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/student-login.js"></script>
+</body>
+</html>

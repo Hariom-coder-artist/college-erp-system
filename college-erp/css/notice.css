@@ -1,0 +1,4 @@
+/* css/notice.css */
+@import url('main.css');
+
+.box{max-height:60vh;overflow:auto}

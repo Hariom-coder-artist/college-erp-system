@@ -1,0 +1,81 @@
+<!-- student-manage-profile.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Manage Profile - Student</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/student-manage-profile.css">
+  <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      
+      <div class="brand"><img src="assets/college.png" alt="logo" style="height:36px">College ERP System</div>
+      <div class="welcome">Welcome Hariom Kumar</div>
+      <ul class="nav">
+        <li><img src="assets/dashboard.png" alt="logo" style="height:36px"><a href="student-dashboard.html">Dashboard</a></li>
+        <li class="active"><img src="assets/profile.png" alt="logo" style="height:36px"><a href="student-manage-profile.html">Manage Profile</a></li>
+        <li><img src="assets/attendance.png" alt="logo" style="height:36px"><a href="student-attendance.html">View Attendance</a></li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <div class="header">
+        <div>
+          <div class="h-title">Manage Profile</div>
+          <div class="h-sub">Update your personal information</div>
+        </div>
+        <div><a href="index.html" class="right-muted">Logout</a></div>
+      </div>
+
+      <form id="profileForm" style="max-width:720px">
+        <div class="form-row">
+          <label class="right-muted">Full name</label>
+          <input class="input" name="fullname" value="Hariom Kumar" required>
+        </div>
+        <div class="form-row">
+          <label class="right-muted">Email</label>
+          <input class="input" name="email" type="email" value="hariom@gmail.com" required>
+        </div>
+        <div class="form-row">
+          <label class="right-muted">Password</label>
+          <input class="input" name="password" type="password" value="password" required>
+        </div>
+        <div style="display:flex;gap:12px">
+          <button class="btn btn-primary" type="submit">Save Changes</button>
+          <button class="btn btn-ghost" id="resetProfile" type="button">Reset</button>
+        </div>
+      </form>
+    </main>
+
+    <aside class="quick">
+      <h4>Quick Menu</h4>
+      <a href="#" data-open-modal="noticeModal">Notice</a>
+      <a href="#">Change Password</a>
+    </aside>
+  </div>
+
+  <!-- Notice modal -->
+  <div id="noticeModal" class="modal" style="display:none">
+    <div class="box">
+      <h3>Notice</h3>
+      <table class="table" id="noticeTable">
+        <thead><tr><th>Notice Description</th><th>Date</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <form id="noticeForm" style="margin-top:12px">
+        <div class="form-inline">
+          <input name="notice" class="input" placeholder="Enter notice description">
+          <button class="btn btn-primary" type="submit">Add Notice</button>
+          <button type="button" data-close-modal class="btn btn-ghost">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/student-manage-profile.js"></script>
+</body>
+</html>

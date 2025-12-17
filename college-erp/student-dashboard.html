@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/student-dashboard.css">
+  <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="brand"><img src="assets/college.png" alt="logo" style="height:36px">College ERP System</div>
+      <div class="welcome">Welcome Hariom Kumar</div>
+      <ul class="nav">
+        <li class="active"><img src="assets/dashboard.png" alt="logo" style="height:36px"><a href="student-dashboard.html">Dashboard</a></li>
+        <li><img src="assets/profile.png" alt="logo" style="height:36px"><a href="student-manage-profile.html">Manage Profile</a></li>
+        <li><img src="assets/attendance.png" alt="logo" style="height:36px"><a href="student-attendance.html">View Attendance</a></li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <div class="header">
+        <div>
+          <div class="h-title">Student Dashboard</div>
+          <div class="h-sub">Overview of your account</div>
+        </div>
+        <div>
+          <a href="index.html" class="right-muted">Logout</a>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="tile">
+          <img src="assets/profile.png" alt="logo" style="height:36px">
+          <div class="num">Profile</div>
+          <div class="label">View and edit your profile</div>
+          <a href="student-manage-profile.html">Open</a>
+        </div>
+
+        <div class="tile">
+          <img src="assets/attendance.png" alt="logo" style="height:36px">
+          <div class="num">Attendance</div>
+          <div class="label">Track your attendance</div>
+          <a href="student-attendance.html">Open</a>
+        </div>
+
+        <div class="tile">
+          <img src="assets/fees.png" alt="logo" style="height:36px">
+          <div class="num">Fees</div>
+          <div class="label">12000</div>
+        </div>
+
+        <div class="tile">
+          <img src="assets/notices.png" alt="logo" style="height:36px">
+          <div class="num">Notice</div>
+          <div class="label">Latest announcements</div>
+          <a href="#" data-open-modal="noticeModal">Open</a>
+        </div>
+      </div>
+    </main>
+
+    <aside class="quick">
+      <h4>Quick Menu</h4>
+      <a href="#" data-open-modal="noticeModal">Notice</a>
+      <a href="student-manage-profile.html">Change Password</a>
+    </aside>
+  </div>
+
+  <!-- Notice modal -->
+  <div id="noticeModal" class="modal" style="display:none">
+    <div class="box">
+      <h3>Notice</h3>
+      <table class="table" id="noticeTable">
+        <thead><tr><th>Notice Description</th><th>Date</th></tr></thead>
+        <tbody></tbody>
+      </table>
+
+      <form id="noticeForm" style="margin-top:12px">
+        <div class="form-inline">
+          <input name="notice" class="input" placeholder="Enter notice description">
+          <button class="btn btn-primary" type="submit">Add Notice</button>
+          <button type="button" data-close-modal class="btn btn-ghost">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/student-dashboard.js"></script>
+</body>
+</html>
