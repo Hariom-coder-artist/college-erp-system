@@ -8,9 +8,9 @@ const App = (() => {
       return raw ? JSON.parse(raw) : {
         notices: [],
         students: [{name:'Hariom Kumar',email:'hariom@gmail.com'},{name:'Omkar Roshan',email:'omkar@gmail.com'}],
-        faculties: [{name:'Mahi Rastogi',email:'mahi@gmail.com'}],
-        courses: [{name:'B.Tech CSE'}],
-        metrics: {faculty:1,students:1,courses:1,totalFees:89000}
+        faculties: [{name:'Mahi Rastogi',email:'mahi@gmail.com'},{name:'Suhana Singh',email:'suhana@gmail.com'}],
+        courses: [{name:'B.Tech CSE'},{name:'B.Tech ECE'}],
+        metrics: {faculty:2,students:2,courses:2,totalFees:89000}
       };
     }catch(e){
       console.error('readStore error',e);
